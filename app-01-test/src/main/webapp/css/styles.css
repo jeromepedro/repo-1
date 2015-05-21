@@ -1,0 +1,149 @@
+      /* Allow div of pushpin to display overflowing content */
+
+/*a:link {
+color:white;
+font-family:Arial,Sans-serif;
+font-size:10pt;
+padding-left:30px;
+font-weight:bold;
+text-decoration:none;
+position:absolute; 
+margin-top:5px;
+} */
+
+a:visited {color:white;}  /* visited link */
+a:hover {color:white;
+	 cursor:pointer;}  /* mouse over link */
+a:active {color:white;}  /* selected link */ 
+
+
+
+a.footer:link {
+color:#222222;
+font-family:Arial,Sans-serif;
+font-size:10pt;
+text-decoration:none;
+position:relative;
+margin-left:-30px;
+font-weight:normal;  
+}
+
+a.footer:visited {color:#222222;}  /* visited link */
+a.footer:hover {color:white;}  /* mouse over link */
+a.footer:active {color:#222222;}  /* selected link */
+
+
+.logo
+{
+position:relative;
+}
+
+.title
+{color:#000000;
+ font-family:Helvetica,Sans-Serif;
+font-size:24px;
+padding-left:10pt;
+position:relative;
+text-align:center;
+}
+
+.subtitle
+{color:#000000;
+ font-family:Arial,Sans-Serif;
+font-size:12pt;
+font-weight:bold;
+text-align:left;
+padding-left:2px;
+}
+
+.content
+{color:#FF6600;
+ font-family:Arial;
+font-size:12.0pt;
+width:800px;
+height:40px;
+position:relative;
+text-align:left;
+}
+
+.formContent
+{color:#222222;
+ background-color:#EEEEEE;
+ font-family:Arial;
+font-size:11.0pt;
+text-align:left;
+margin-left:10pt;
+padding-left:10px;
+}
+
+.cellContent
+{color:#222222;
+ background-color:#EEEEEE;
+ font-family:Arial;
+font-size:11.0pt;
+text-align:left;
+margin-left:10pt;
+padding:10pt;
+}
+
+
+.comment
+{color:#555555;
+ font-family:Arial;
+ font-size:8.0pt;
+ vertical-align:top;
+}
+
+
+.error_msg {
+	color:#FF0022;
+	font-family:Arial;
+	font-size:10.0pt;
+	position:relative;
+	text-align:left;
+	padding-left:10pt; 
+	vertical-align:top;
+}
+
+.info_msg {
+	color:#FF6600;
+	width:600px;
+	font-family:Arial;
+	font-size:12.0pt;
+	position:relative;
+	text-align:left;
+	padding-left:90px; 
+	vertical-align:top;
+}
+
+.button {
+  height: 25px;
+  width:100px;
+  color: white;
+  font-family:Arial;
+  font-size:13px;
+  font-weight:bold;
+   border: 0px solid #000000;
+  background: url('../images/black_button.png'); 
+  margin-left:10pt;
+}
+.button:hover {
+  color: white; 
+  background:#FF6600;
+  border: 1px solid #000000;
+}
+
+.footer
+	{color:grey;
+	font-size:8pt;
+	font-family:Verdana, sans-serif;
+	text-align:right;
+	padding-top:5px;
+	padding-right:5px;
+	vertical-align:top;}
+	
+table tr
+ {
+  height:25px; 
+ } 
+ 

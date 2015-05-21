@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:context="http://www.springframework.org/schema/context"
+       >
+
+  <bean id="log4jInitialization" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+    <property name="targetClass" value="org.springframework.util.Log4jConfigurer"/>
+    <property name="targetMethod" value="initLogging"/>
+    <property name="arguments">
+      <list>
+	<value>/opt/application/otiapp/current/conf/app-01-test/config-log4j.xml</value>
+      </list>
+    </property>
+  </bean>
+
+
+
+  <!-- couche métier -->
+
+  <bean id="dbagent" class="business.DBAgent">
+    <constructor-arg value="/opt/application/otiapp/current/conf/app-01-test/app-01-test.properties"/>		
+  </bean>
+ 
+  <bean id="app-01-test" class="business.Application">
+  	<constructor-arg ref="dbagent"/>
+  	<constructor-arg value="/opt/application/otiapp/current/conf/app-01-test/app-01-test.properties"/>
+  	
+  </bean>  
+
+</beans>
