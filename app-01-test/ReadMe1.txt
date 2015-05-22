@@ -1,2 +1,1 @@
-Application web de test mettant en oeuvre 
-- Spring
+Application web de test pour windows 8
